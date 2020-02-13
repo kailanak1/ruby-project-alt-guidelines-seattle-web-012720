@@ -7,8 +7,4 @@ task :console do
   # ActiveRecord::Base.logger = Logger.new(STDOUT)
   Pry.start
 
-
-
-  #user 1 
-  # Drink.create()
 end

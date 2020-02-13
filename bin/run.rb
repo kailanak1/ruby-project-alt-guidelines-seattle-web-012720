@@ -11,11 +11,10 @@ end
 
 def user
     User.last 
-end 
+end
 
-# cli.main_menu 
 
 cli.tea_selection(user)
 cli.order_confirmation(user)
-#user enters a choice  
+
 

@@ -10,7 +10,8 @@ class CommandLineInterface
     #                             #
     ###############################
     def greet
-        puts "Welcome to Boba Tea Shop."
+        puts "
+        Welcome to Boba Tea Shop" 
     end 
 
     ###############################
@@ -95,7 +96,7 @@ class CommandLineInterface
         prompt = TTY::Prompt.new
         input_2 = prompt.select('Please select a topping') do |menu|
             menu.default 6
-            
+        puts "----------------"
             menu.choice 'Boba', 1
             menu.choice 'Mini', 2
             menu.choice 'Popping', 3
@@ -124,7 +125,7 @@ class CommandLineInterface
 
         input_3 = prompt.select('Please confirm order or select another option') do |menu|
             menu.default 1 
-            
+            puts "----------------"
             menu.choice 'Confirm order', 1
             menu.choice 'Update Order', 2
             menu.choice 'Cancel Order', 3
